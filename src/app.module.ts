@@ -22,7 +22,7 @@ import { ConfigModule } from '@nestjs/config';
         database: process.env.MYSQLDATABASE,
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         autoLoadEntities: true,
-        synchronize: false,
+        synchronize: true,
     }),
     CandidatesModule,
     CompaniesModule,
